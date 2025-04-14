@@ -7,7 +7,7 @@ export default function CardArtist({ artist }) {
 
   return (
     <Link
-      href={`/artist/${artist.id}`}
+      href={`/artists/${artist.id}`}
       className={cn(
         "rounded-md p-4 border border-gray-700 bg-gray-900 shadow hover:shadow-lg transition-all cursor-pointer",
         "transition-all hover:shadow-xl hover:shadow-gray-400/40 relative top-0 hover:-top-2",
