@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/header";
 
 import "./globals.css";
+import SpotifyBar from "@/components/SpotifyBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,10 +23,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark h-screen flex-col`}
       >
         <Header />
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
+        <SpotifyBar />
       </body>
     </html>
   );
