@@ -67,8 +67,8 @@ export default async function Artist({ params }) {
           {/*dates de concert*/}
           <Card className="flex-1 min-w-56 max-w-full bg-gray-900">
             <CardHeader>
-              <CardTitle><h2 className="text-2xl">Concert Dates</h2></CardTitle>
-              <CardDescription>Dates and locations of concerts</CardDescription>
+              <CardTitle><h2 className="text-2xl">Dates de concert</h2></CardTitle>
+              <CardDescription>Dates et lieux des prochains concerts</CardDescription>
             </CardHeader>
             <CardContent>
               <Accordion type="single" collapsible className="w-full">
@@ -92,7 +92,7 @@ export default async function Artist({ params }) {
           {/*membres du groupe*/}
           <Card className="flex-1 min-w-56 max-w-full bg-gray-900">
             <CardHeader>
-              <CardTitle><h2 className="text-2xl">Group member</h2></CardTitle>
+              <CardTitle><h2 className="text-2xl">Membres du groupe</h2></CardTitle>
               <CardDescription></CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export default async function Artist({ params }) {
           {/*infos diverses*/}
           <Card className="flex-1 min-w-56 max-w-full bg-gray-900">
             <CardHeader>
-              <CardTitle><h2 className="text-2xl">Additionnal Infos</h2></CardTitle>
+              <CardTitle><h2 className="text-2xl">Infos additionnelles</h2></CardTitle>
               <CardDescription></CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-2">
