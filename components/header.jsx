@@ -12,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 w-screen px-4">
       <div className="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
         <Link href="/" className="text-white font-bold text-2xl" aria-label="Accueil" tabIndex="0">
           SPEEDGROUPIE
