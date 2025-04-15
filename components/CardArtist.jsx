@@ -29,7 +29,6 @@ export default function CardArtist({ artist }) {
         <div className="text-white flex items-center justify-between">
           <h2 className="text-xl font-bold">{artist.name}</h2>
           <Badge>
-            {artist.creationDate} {hovering ? <span>hovered</span> : <span>nope</span>}
           </Badge>
         </div>
       </Link>
