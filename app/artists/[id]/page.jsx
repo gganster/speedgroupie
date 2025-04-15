@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion"
 import dayjs from "dayjs";
 import {Spotlight} from "@/components/aceternity/spotlight";
+import PlayButton from "@/components/play-button";
 
 import { getArtistMoreInfo } from "@/lib/openai";
 
@@ -116,7 +117,9 @@ export default async function Artist({ params }) {
           </Card>
       </div>
 
-      
+      <div>
+        <PlayButton id={id} />
+      </div>
     </div>
   )
 }
