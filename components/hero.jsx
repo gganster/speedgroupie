@@ -4,13 +4,17 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Search } from "lucide-react";
 import { BackgroundGradientAnimation } from "./aceternity/background-gradient-animation";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
   const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter();
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!searchTerm) return;
+
+    router.push(`/ai?searchterm=${searchTerm}`);
 
   }
 //m-4 mb-2 p-4 py-8
@@ -28,6 +32,8 @@ export default function Hero() {
             className="mt-4 dark:bg-secondary/60 "
             type="text"
             placeholder="Décrivez le concert de vos rêves, nous nous occupons du reste"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
           <Button
             size={"icon"}

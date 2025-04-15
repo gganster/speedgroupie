@@ -113,6 +113,9 @@ dependencies:
   react-spotify-embed:
     specifier: ^2.0.4
     version: 2.0.4
+  simplex-noise:
+    specifier: ^4.0.3
+    version: 4.0.3
   sonner:
     specifier: ^2.0.3
     version: 2.0.3(react-dom@19.1.0)(react@19.1.0)
@@ -2265,6 +2268,10 @@ packages:
       is-arrayish: 0.3.2
     dev: false
     optional: true
+
+  /simplex-noise@4.0.3:
+    resolution: {integrity: sha512-qSE2I4AngLQG7BXqoZj51jokT4WUXe8mOBrvfOXpci8+6Yu44+/dD5zqDpOx3Ux792eamTd2lLcI8jqFntk/lg==}
+    dev: false
 
   /sonner@2.0.3(react-dom@19.1.0)(react@19.1.0):
     resolution: {integrity: sha512-njQ4Hht92m0sMqqHVDL32V2Oun9W1+PHO9NDv9FHfJjT3JT22IG4Jpo3FPQy+mouRKCXFWO+r67v6MrHX2zeIA==}
