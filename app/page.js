@@ -12,7 +12,7 @@ export default async function Home() {
       <div className="relative">
         <div className="absolute top-0">
           <Hero />
-          <div className="flex flex-wrap gap-4 p-4">
+          <div className="flex flex-wrap gap-x-4 gap-y-8 p-4 max-w-7xl mx-auto">
             {data.map((artist) => (
               <CardArtist key={artist.id} artist={artist} />
             ))}
